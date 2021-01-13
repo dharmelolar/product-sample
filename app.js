@@ -13,7 +13,8 @@ const radio = document.getElementById('radio');
 const closeModal = document.querySelector('.close_modal');
 const closeModal1 = document.querySelector('.close_modal1')
 const closeModal2 = document.querySelector('.close_modal2');
-const closeModal3 = document.querySelector('.close_modal3')
+const closeModal3 = document.querySelector('.close_modal3');
+const icon = document.querySelector('.lni-heart-filled')
 
 
 
@@ -35,6 +36,9 @@ btnSubtract.addEventListener("click", ()=>{
     }else{
         input.value=0
     }
+});
+icon.addEventListener('click', ()=>{
+  icon.classList.toggle('lni-heart')
 })
 
 

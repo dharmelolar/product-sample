@@ -17,8 +17,9 @@ body{
     margin: 5rem auto;
 }
 img{
-    width: 80%;
-    max-width: 100%;
+    width: 70%;
+    max-width: 70%;
+    height: 10rem;
 }
 .main{
     border: 1px solid  #dad6d6;
@@ -39,6 +40,7 @@ h3,.details{
     text-align: center;
 }
 .main_product_body{
+    display: grid;
     padding: 2rem 0rem;
 }
 .main_price_tag{
@@ -54,21 +56,21 @@ h3,.details{
     border: none;
     border-radius: 30px;
     background-color: #09312a;
-    padding: .5rem .6 rem;
+    padding: .5rem 3rem;
     font-size: 1rem;
-    width: 7rem;
     font-family: inherit;
-    margin: 1rem 4rem;
+    margin:auto;
     outline: none;
 }
 span{
     display: inline;
 }
 .click{
-    padding-right: 2rem;
+    padding-left: 2rem;
 }
 #radio{
-   border-radius: 50%; 
+  position: relative;
+  top: 1.5rem;
 }
 .modal_container{
     display: flex;
@@ -143,21 +145,25 @@ span{
     background-color: #dad6d6;
     display: flex;
     justify-content: center;
-    padding: 2rem;
-    /* width: 70%; */
+    align-items: center;
+    padding: 3rem;
+    /* width: 100%; */
 }
 .modal_body{
     background-color: #fff;
     width: 70%;
+    display: grid;
     padding: 2rem 1rem;
 }
 .modal_img img{
-    max-width: 70%;
+    max-width: 100%;
 }
 .close_modal,.close_modal1,.close_modal2,.close_modal3{
     position: relative;
     left: 20rem;
+    /* margin:auto 5rem; */
     border: none;
+    outline: none;
     font-size:15px;
     background-color: transparent;
 }
@@ -179,12 +185,18 @@ span{
     justify-content: space-between;
     margin: 3rem 0rem;
 }
-div .lni-heart{
+#icon{
    padding-top: .5rem;
    /* border: 1px solid red; */
    padding: .5rem;
    background-color: rgb(238, 236, 236);
    border-radius: 50%;
+}
+.lni-heart-filled{
+    color: red;
+}
+.lni-heart{
+    color: black;
 }
 .modalBtn{
     border: none;
@@ -194,7 +206,7 @@ div .lni-heart{
     font-size: 1rem;
     width: 10rem;
     font-family: inherit;
-    /* margin: 1rem 4rem; */
+    /* margin: 1rem 0rem; */
     outline: none;
 }
 .modalBtn2{
@@ -205,7 +217,7 @@ div .lni-heart{
     font-size: 1rem;
     width: 15rem;
     font-family: inherit;
-    margin: 1rem 5rem;
+    margin: auto;
     outline: none;
 }
 @media screen and (max-width:1024px){
@@ -263,13 +275,17 @@ div .lni-heart{
         align-items: center;
     }
     .modal_img{
-        display: none;
+        width: 20rem;
     }
     .modal_body{
         width: 20rem;
+        padding: 1rem;
     }
     div .lni-heart{
         display: none;
+    }
+    .counter{
+        padding:0rem -1rem;
     }
     .modalBtn2{
         border: none;
@@ -286,9 +302,9 @@ div .lni-heart{
         border: none;
         border-radius: 30px;
         background-color: #09312a;
-        padding: .5rem .6 rem;
+        padding: .5rem .6rem;
         font-size: 1rem;
-        width: 7rem;
+        /* width: 7rem; */
         font-family: inherit;
         margin: 1rem 6rem;
         outline: none;
