@@ -21,6 +21,9 @@ img{
     max-width: 70%;
     height: 10rem;
 }
+button{
+    cursor: pointer;
+}
 .main{
     border: 1px solid  #dad6d6;
     margin: 1rem;
@@ -55,7 +58,8 @@ h3,.details{
 .cart-btn{
     border: none;
     border-radius: 30px;
-    background-color: #09312a;
+    background-color: #202E3A;
+    color: #f5f5f5;
     padding: .5rem 3rem;
     font-size: 1rem;
     font-family: inherit;
@@ -66,7 +70,7 @@ span{
     display: inline;
 }
 .click{
-    padding-left: 2rem;
+    padding-left: 1.5rem;
 }
 #radio{
   position: relative;
@@ -159,22 +163,24 @@ span{
     max-width: 100%;
 }
 .close_modal,.close_modal1,.close_modal2,.close_modal3{
-    position: relative;
-    left: 20rem;
-    /* margin:auto 5rem; */
+    /* position: relative;
+    left:2rem;
+    margin:auto 0rem; */
+    text-align: right;
     border: none;
     outline: none;
     font-size:15px;
     background-color: transparent;
 }
 /*  */
-#add,#subtract{
+#add,#subtract,#add1,#subtract1,
+#add2,#subtract2,#add3,#subtract3{
     width: 30px;
     height: 30px;
     border-radius: 50%;
     outline: none;
 }
-#input{
+#input,#input1,#input2,#input3{
     border: none;
     background-color:inherit ;
     outline: none;
@@ -201,7 +207,8 @@ span{
 .modalBtn{
     border: none;
     border-radius: 30px;
-    background-color: #09312a;
+    background-color: #202E3A;
+    color: #f5f5f5;
     padding: .5rem .6rem;
     font-size: 1rem;
     width: 10rem;
@@ -212,7 +219,8 @@ span{
 .modalBtn2{
     border: none;
     border-radius: 30px;
-    background-color: #09312a;
+    background-color: #202E3A;
+    color: #f5f5f5;
     padding: .5rem .6rem;
     font-size: 1rem;
     width: 15rem;
@@ -228,15 +236,13 @@ span{
         flex-wrap: wrap;
     }
     .close_modal,.close_modal1,.close_modal2,.close_modal3{
-        position: relative;
-        left: 17rem;
-        border: none;
-        font-size:15px;
-        background-color: transparent;
+        text-align: right;
+    border: none;
+    outline: none;
+    font-size:15px;
+    background-color: transparent;
     }
-    div .lni-heart{
-        display: none;
-    }
+ 
     .modalBtn2{
         border: none;
         border-radius: 30px;
@@ -252,11 +258,11 @@ span{
         border: none;
         border-radius: 30px;
         background-color: #09312a;
-        padding: .5rem .6 rem;
+        padding: .5rem .6rem;
         font-size: 1rem;
-        width: 7rem;
+        width: 15rem;
         font-family: inherit;
-        margin: 1rem 6rem;
+        margin: auto;
         outline: none;
     }
 }
@@ -268,6 +274,7 @@ span{
         align-items: center;
     }
     /*  */
+
     .modal{
         display: flex;
         flex-direction: column;
@@ -275,22 +282,30 @@ span{
         align-items: center;
     }
     .modal_img{
-        width: 20rem;
+        display: none;
     }
     .modal_body{
         width: 20rem;
-        padding: 1rem;
-    }
-    div .lni-heart{
-        display: none;
     }
     .counter{
-        padding:0rem -1rem;
+        /* justify-content: space-between; */
+    /* margin: 3rem 0rem; */
+        padding:0rem 0rem 0rem -1rem;
+    }
+    .modalBtn{
+       position: relative;
+       top: 3rem;
+       right: 1.5rem;
+       margin: 1rem 0;
+    }
+    #icon{
+        margin-right: 1rem;
     }
     .modalBtn2{
         border: none;
         border-radius: 30px;
-        background-color: #09312a;
+        background-color: #202E3A;
+        color: #f5f5f5;
         padding: .5rem .6rem;
         font-size: 1rem;
         width: 15rem;
@@ -301,12 +316,19 @@ span{
     .cart-btn{
         border: none;
         border-radius: 30px;
-        background-color: #09312a;
+        background-color: #202E3A;
+        color: #f5f5f5;
         padding: .5rem .6rem;
         font-size: 1rem;
-        /* width: 7rem; */
+        width: 10rem;
         font-family: inherit;
-        margin: 1rem 6rem;
+        margin:auto;
         outline: none;
+    }
+}
+
+@media screen and (max-width:320px){
+    .main{
+        width: 15rem;
     }
 }
